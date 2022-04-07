@@ -1,7 +1,7 @@
 FROM python:3.11-rc-bullseye
 
 RUN mkdir /app
-ADD . /app
+COPY ./list_position.py /app
 WORKDIR /app
 
 #RUN pip install -r requirements.txt
