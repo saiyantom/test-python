@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  multiply_app:
+    build:
+      context: .
+      dockerfile: Dockerfile-multiply
+    #stdin_open: true
+    tty: true
+    volumes:
+      - .:/test-python

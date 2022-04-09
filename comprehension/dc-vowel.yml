@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  vowel_app:
+    build:
+      context: .
+      dockerfile: Dockerfile-vowel
+    #stdin_open: true
+    tty: true
+    volumes:
+      - .:/test-python

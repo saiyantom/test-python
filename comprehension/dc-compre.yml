@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  compre_app:
+    build:
+      context: .
+      dockerfile: Dockerfile-compre
+    #stdin_open: true
+    tty: true
+    volumes:
+      - .:/test-python

@@ -13,11 +13,5 @@ for name,subj in student.items():
    new_student = {name:{'Total':total,'Average':average}}
    result_student.update(new_student)
 
-#for name,mark in result_student.items():
-#    print(name,mark['Total'],mark['Average'])
-
-#print(result_student)
-
 df = pd.DataFrame(result_student)
 print(tabulate(df.T, headers="keys"))
-print("vvv")
