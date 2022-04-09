@@ -20,3 +20,4 @@ for name,subj in student.items():
 
 df = pd.DataFrame(result_student)
 print(tabulate(df.T, headers="keys"))
+print("vvv")

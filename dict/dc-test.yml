@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  test_app:
+    build:
+      context: .
+      dockerfile: Dockerfile-test
+    #stdin_open: true
+    tty: true
+    volumes:
+      - .:/test-python
