@@ -1,0 +1,8 @@
+FROM python:3.10.4-bullseye
+
+RUN mkdir /app
+COPY ./num.py /app
+WORKDIR /app
+
+#RUN pip install -r requirements.txt
+CMD ["python", "num.py"]
