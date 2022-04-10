@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  digit_app:
+    build:
+      context: .
+      dockerfile: Dockerfile-digit
+    #stdin_open: true
+    tty: true
+    volumes:
+      - .:/test-python
